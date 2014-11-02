@@ -1,3 +1,12 @@
 language: node_js
 node_js:
-  - 0.10
+- 0.1
+deploy:
+  provider: openshift
+  user: francesco.zaia@gmail.com
+  password:
+    secure: kLyNgNYd+7XNDrDG0KecFLITF3LO8A02zyFStUhM2IoSdb7qXB/QvZm3OyP6E5WsDfgOCByrmpPeAmbf9R2lgRGprjIEOj3k45dMjNX0RWzuE+p9PqcIhdFcOvy5H6TGS2xLnXObExrAL0jicXvInIBsP7IkEJWdDpzZUsURZhk=
+  app: nodejs
+  domain: nodejs-francescozaia.rhcloud.com
+  on:
+    repo: francescozaia/nodejs
