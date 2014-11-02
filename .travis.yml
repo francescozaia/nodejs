@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- 0.1
+- "0.10"
 deploy:
   provider: openshift
   user: francesco.zaia@gmail.com
@@ -10,3 +10,7 @@ deploy:
   domain: francescozaia
   on:
     repo: francescozaia/nodejs
+env:
+  - NODE_ENV=development
+services:
+  - mongodb

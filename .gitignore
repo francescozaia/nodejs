@@ -18,8 +18,38 @@ Icon
 .idea/
 
 # --------------------
+# Netbeans Files
+# --------------------
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# --------------------
 # Node Files
 # --------------------
 .nodemonignore
 npm-debug.log
 node_modules/
+
+# --------------------
+# SASS Files
+# --------------------
+.sass-cache/
+
+# --------------------
+# Bower Files
+# --------------------
+.bower-*/
+bower_components
+
+# --------------------
+# App Files
+# --------------------
+test/coverage/
+modules/public/
+modules/views/
+/public/build/
