@@ -118,10 +118,10 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['clean', 'cssmin', 'uglify', 'concurrent']);
   } else {
     grunt.registerTask('default', ['clean', 'jshint', 'csslint', 'concurrent']);
-    //Test task.
-    grunt.registerTask('test', ['env:test', 'mochaTest', 'karma:unit']);
   }
 
+  //Test task.
+  grunt.registerTask('test', ['env:test', 'mochaTest', 'karma:unit']);
 
   // For Heroku users only.
   // Docs: https://github.com/linnovate/mean/wiki/Deploying-on-Heroku

@@ -11,6 +11,6 @@ deploy:
   on:
     repo: francescozaia/nodejs
 env:
-  - NODE_ENV=production
+  - NODE_ENV=development
 services:
   - mongodb
